@@ -8,13 +8,13 @@ import Contact from './pages/Contact.tsx';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Portfolio">
       <Navbar />
       
       <Routes>
-        <Route path="/Portfolio/" element={<Home />} />
-        <Route path="/Portfolio/projects" element={<Projects />} />
-        <Route path="/Portfolio/contact" element={<Contact />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   );
