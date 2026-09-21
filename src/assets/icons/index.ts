@@ -14,16 +14,16 @@ export { default as CSSIcon } from "./css.svg";
 export { default as FastAPIIcon } from "./fastapi.svg";
 
 export { default as MySQLIcon } from "./mysql.svg";
-export {default as PostgreSQLIcon } from "./postgresql.svg";
-export {default as SupabaseIcon } from "./supabase.svg";
+export { default as PostgreSQLIcon } from "./postgresql.svg";
+export { default as SupabaseIcon } from "./supabase.svg";
 
-export {default as GitIcon } from "./git.svg";
-export {default as GitHubIcon } from "./github.svg";
-export {default as DockerIcon } from "./docker.svg";
-export {default as LinuxIcon } from "./linux.svg";
-export {default as CloudflareIcon } from "./cloudflare.svg";
-export {default as VercelIcon } from "./vercel.svg";
-export {default as VSCodeIcon} from "./vs-code.svg";
+export { default as GitIcon } from "./git.svg";
+export { default as GitHubIcon } from "./github.svg";
+export { default as DockerIcon } from "./docker.svg";
+export { default as LinuxIcon } from "./linux.svg";
+export { default as CloudflareIcon } from "./cloudflare.svg";
+export { default as VercelIcon } from "./vercel.svg";
+export { default as VSCodeIcon} from "./vs-code.svg";
 
 type IconComponent = React.FC<React.SVGProps<SVGSVGElement>> | string;
 export const PlaceholderIcon: IconComponent = (props) =>
@@ -38,3 +38,8 @@ export const PlaceholderIcon: IconComponent = (props) =>
     },
     React.createElement("circle", { cx: "12", cy: "12", r: "9" }),
   );
+
+export { default as PyTorchIcon } from "./pytorch.svg";
+export { default as TensorflowIcon } from "./tensorflow.svg";
+export { default as YOLOIcon } from "./yolo.svg";
+export { default as KerasIcon } from "./keras.svg";
