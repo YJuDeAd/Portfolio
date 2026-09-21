@@ -2,6 +2,7 @@ import Navbar from "./components/navbar.tsx";
 
 import AboutMe from './pages/AboutMe.tsx';
 import Skills from './pages/Skills.tsx';
+import Experience from "./pages/Experience.tsx";
 import Projects from './pages/Projects.tsx';
 import Contact from './pages/Contact.tsx';
 
@@ -12,6 +13,7 @@ function App() {
       <main>
         <section id="aboutMe"><AboutMe /></section>
         <section id="skills"><Skills /></section>
+        <section id="experience"><Experience /></section>
         <section id="projects"><Projects /></section>
         <section id="contact"><Contact /></section>
       </main>
