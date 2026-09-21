@@ -1,9 +1,5 @@
 import { 
-  PythonIcon, CIcon, CppIcon, JavascriptIcon, ReactIcon, 
-  ViteIcon, HTMLIcon, CSSIcon, FastAPIIcon, MySQLIcon,
-  PostgreSQLIcon, SupabaseIcon, GitIcon, GitHubIcon,
-  LinuxIcon, CloudflareIcon, VercelIcon, VSCodeIcon,
-  DockerIcon, PlaceholderIcon
+  PythonIcon, CloudflareIcon, FastAPIIcon, ReactIcon, PlaceholderIcon
 } from "../assets/icons";
 
 type IconComponent = React.FC<React.SVGProps<SVGSVGElement>> | string;
