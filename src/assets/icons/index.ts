@@ -1,4 +1,5 @@
 // src/assets/icons/index.js
+import * as React from "react";
 
 export { default as PythonIcon } from "./python.svg";
 export { default as CIcon } from "./C.svg";
@@ -23,3 +24,17 @@ export {default as LinuxIcon } from "./linux.svg";
 export {default as CloudflareIcon } from "./cloudflare.svg";
 export {default as VercelIcon } from "./vercel.svg";
 export {default as VSCodeIcon} from "./vs-code.svg";
+
+type IconComponent = React.FC<React.SVGProps<SVGSVGElement>> | string;
+export const PlaceholderIcon: IconComponent = (props) =>
+  React.createElement(
+    "svg",
+    {
+      viewBox: "0 0 24 24",
+      fill: "white",
+      stroke: "currentColor",
+      strokeWidth: 1.5,
+      ...props,
+    },
+    React.createElement("circle", { cx: "12", cy: "12", r: "9" }),
+  );

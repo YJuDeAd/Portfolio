@@ -3,22 +3,10 @@ import {
   ViteIcon, HTMLIcon, CSSIcon, FastAPIIcon, MySQLIcon,
   PostgreSQLIcon, SupabaseIcon, GitIcon, GitHubIcon,
   LinuxIcon, CloudflareIcon, VercelIcon, VSCodeIcon,
-  DockerIcon,
+  DockerIcon, PlaceholderIcon
 } from "../assets/icons";
 
 type IconComponent = React.FC<React.SVGProps<SVGSVGElement>> | string;
-
-const PlaceholderIcon: IconComponent = (props) => (
-  <svg
-    viewBox="0 0 24 24"
-    fill="white"
-    stroke="currentColor"
-    strokeWidth={1.5}
-    {...props}
-  >
-    <circle cx="12" cy="12" r="9" />
-  </svg>
-);
 
 type Skill = {
   name: string;
