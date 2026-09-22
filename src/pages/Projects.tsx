@@ -23,8 +23,7 @@ const project: ProjectEntry[] = [
       "Designed a unified framework using a Stacking Ensemble architecture to route multi-source inputs (social media, SMS, news) to specialized deep learning models.",
       "Containerized application components using Docker and constructed FastAPI endpoints delivering real-time credibility scores.",
     ],
-    // projectLink: "https://github.com/YJuDeAd/TruthShield",
-    projectLink: "",
+    projectLink: "https://github.com/YJuDeAd/TruthShield",
     techstack: [
       {name: "Python", icon: PythonIcon},
       {name: "FastAPI", icon: FastAPIIcon},
@@ -40,8 +39,7 @@ const project: ProjectEntry[] = [
       "Engineered an end-to-end IoT and edge-computing application automating entry gates and monitoring real-time occupancy",
       "Integrated microcontrollers with edge vision models and centralized telemetry onto a low-latency Home Assistant operational dashboard.",
     ],
-    // projectLink: "https://github.com/YJuDeAd/parkEase",
-    projectLink: "",
+    projectLink: "https://github.com/YJuDeAd/parkEase",
     techstack: [
       {name: "Python", icon: PythonIcon},
       {name: "YOLOv8", icon: YOLOIcon},
@@ -55,8 +53,7 @@ const project: ProjectEntry[] = [
       "Built an image recognition platform applying transfer learning with MobileNetV2 for multi-class classification.",
       "Executed the complete software pipeline including image preprocessing, data augmentation, model tuning, and evaluation.",
     ],
-    // projectLink: "https://github.com/YJuDeAd/ImgRecon",
-    projectLink: "",
+    projectLink: "https://github.com/YJuDeAd/ImgRecon",
     techstack: [
       {name: "Python", icon: PythonIcon},
       {name: "Tensorflow", icon: TensorflowIcon},
@@ -76,8 +73,17 @@ function Projects() {
         {project.map((project) => (
           <div
             key={project.title}
-            className="group border border-neutral-700 shadow-xs shadow-white/20 rounded-lg p-6 hover:border-neutral-500 transition-colors"
+            className="group relative border border-neutral-700 shadow-xs shadow-white/20 rounded-lg p-6 hover:border-neutral-500 hover:bg-slate-950 transition-colors"
           >
+            {project.projectLink && (
+              <a
+                href={project.projectLink}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={`Open ${project.title} project`}
+                className="absolute inset-0 rounded-lg"
+              />
+            )}
             <div className="flex items-baseline justify-between mb-3">
               <h3 className="text-xl text-neutral-100">
                 {project.title}
@@ -111,21 +117,6 @@ function Projects() {
                 </span>
               ))}
             </div>
- 
-            {project.projectLink && (
-              <div className="flex gap-4 text-sm">
-                {project.projectLink && (
-                  <a
-                    href={project.projectLink}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-neutral-400 hover:text-neutral-100 transition-colors underline underline-offset-4"
-                  >
-                    Code
-                  </a>
-                )}
-              </div>
-            )}
           </div>
         ))}
       </div>

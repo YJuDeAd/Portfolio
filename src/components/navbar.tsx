@@ -8,13 +8,14 @@ function navbar() {
       <a className='p-2.5 mr-3 ml-3 font-bold text-neutral-50 hover:underline' href="#experience">Experience</a>
       <a className='p-2.5 mr-3 ml-3 font-bold text-neutral-50 hover:underline' href="#projects">Projects</a>
       <a className='whitespace-nowrap p-2.5 mr-5 ml-5 font-bold text-neutral-50 hover:underline' href="#contact">Contact Me</a>
-      
-      <div>
-        <SocialIcon url="https://github.com/YJuDeAd" />
-      </div>
-      <div className='mr-3 pr-2.5'>
-        <SocialIcon url="https://www.linkedin.com/in/punya-arora-/" />
+      <div className='flex flex-row'>
+        <div className='mr-3 pr-2.5'>
+          <SocialIcon url="https://github.com/YJuDeAd" />
         </div>
+        <div className='mr-3 pr-2.5'>
+          <SocialIcon url="https://www.linkedin.com/in/punya-arora-/" />
+        </div>
+      </div>
     </nav>
   );
 }
